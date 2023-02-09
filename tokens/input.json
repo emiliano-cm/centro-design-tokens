@@ -405,6 +405,28 @@
       }
     }
   },
+  "p": {
+    "section": {
+      "lg": {
+        "value": 80,
+        "type": "spacing"
+      },
+      "sm": {
+        "value": 0,
+        "type": "spacing"
+      }
+    },
+    "container": {
+      "lg": {
+        "value": 32,
+        "type": "spacing"
+      },
+      "sm": {
+        "value": 16,
+        "type": "spacing"
+      }
+    }
+  },
   "shadow": {
     "xs": {
       "value": {

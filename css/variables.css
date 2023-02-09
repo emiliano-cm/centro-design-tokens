@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 09 Feb 2023 14:20:24 GMT
+ * Generated on Thu, 09 Feb 2023 15:42:49 GMT
  */
 
 :root {
@@ -100,6 +100,10 @@
   --color-primary-700: #285e61;
   --color-primary-800: #234e52;
   --color-primary-900: #1d4044;
+  --p-section-lg: 80;
+  --p-section-sm: 0;
+  --p-container-lg: 32;
+  --p-container-sm: 16;
   --shadow-xs: [object Object];
   --shadow-sm: [object Object],[object Object];
   --shadow-md: [object Object],[object Object];
