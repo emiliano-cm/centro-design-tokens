@@ -1,19 +1,9 @@
 /**
  * Do not edit directly
- * Generated on Thu, 09 Feb 2023 06:28:10 GMT
+ * Generated on Thu, 09 Feb 2023 14:20:24 GMT
  */
 
 :root {
-  --color-primary-50: #e6fffa;
-  --color-primary-100: #b2f5ea;
-  --color-primary-200: #81e6d9;
-  --color-primary-300: #4fd1c5;
-  --color-primary-400: #38b2ac;
-  --color-primary-500: #319795;
-  --color-primary-600: #2c7a7b;
-  --color-primary-700: #285e61;
-  --color-primary-800: #234e52;
-  --color-primary-900: #1d4044;
   --color-white: #ffffff;
   --color-black: #000000;
   --color-white-alpha-50: rgba(255, 255, 255, 0.04);
@@ -37,15 +27,15 @@
   --color-black-alpha-800: rgba(0, 0, 0, 0.8);
   --color-black-alpha-900: rgba(0, 0, 0, 0.92);
   --color-gray-50: #f9fafb;
-  --color-gray-100: #f2f4f7;
-  --color-gray-200: #eaecf0;
-  --color-gray-300: #d0d5dd;
-  --color-gray-400: #98a2b3;
-  --color-gray-500: #667085;
-  --color-gray-600: #475467;
-  --color-gray-700: #344054;
-  --color-gray-800: #1d2939;
-  --color-gray-900: #101828;
+  --color-gray-100: #f9f9f9;
+  --color-gray-200: #f4f4f4;
+  --color-gray-300: #d1d2d4;
+  --color-gray-400: #86898f;
+  --color-gray-500: #73777d;
+  --color-gray-600: #5f636b;
+  --color-gray-700: #373c46;
+  --color-gray-800: #262c36;
+  --color-gray-900: #100101;
   --color-red-50: #fef3f2;
   --color-red-100: #fee4e2;
   --color-red-200: #fecdca;
@@ -100,6 +90,16 @@
   --color-brand-blue: #0c3fea;
   --color-brand-teal: #00aeba;
   --color-brand-coral: #ff8c8c;
+  --color-primary-50: #e6fffa;
+  --color-primary-100: #b2f5ea;
+  --color-primary-200: #81e6d9;
+  --color-primary-300: #4fd1c5;
+  --color-primary-400: #38b2ac;
+  --color-primary-500: #319795;
+  --color-primary-600: #2c7a7b;
+  --color-primary-700: #285e61;
+  --color-primary-800: #234e52;
+  --color-primary-900: #1d4044;
   --shadow-xs: [object Object];
   --shadow-sm: [object Object],[object Object];
   --shadow-md: [object Object],[object Object];
@@ -167,4 +167,5 @@
   --token-set-order-0: base;
   --token-set-order-1: semantics;
   --token-set-order-2: component;
+  --token-set-order-3: legacy;
 }
