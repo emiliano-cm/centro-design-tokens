@@ -23,18 +23,16 @@
     "value": 90,
     "type": "lineHeights"
   },
-  "Base": {
-    "Black & White": {
-      "White": {
-        "value": "#ffffff",
-        "type": "color"
-      },
-      "Black": {
-        "value": "#000",
-        "type": "color"
-      }
+  "color": {
+    "white": {
+      "value": "#fff",
+      "type": "color"
     },
-    "WhiteAlpha": {
+    "black": {
+      "value": "#000",
+      "type": "color"
+    },
+    "whiteAlpha": {
       "50": {
         "value": "#ffffff0a",
         "type": "color"
@@ -76,7 +74,7 @@
         "type": "color"
       }
     },
-    "BlackAlpha": {
+    "blackAlpha": {
       "50": {
         "value": "#0000000a",
         "type": "color"
@@ -118,7 +116,7 @@
         "type": "color"
       }
     },
-    "Gray": {
+    "gray": {
       "50": {
         "value": "#F9FAFB",
         "type": "color"
@@ -160,7 +158,7 @@
         "type": "color"
       }
     },
-    "Red": {
+    "red": {
       "50": {
         "value": "#fef3f2",
         "type": "color"
@@ -202,7 +200,7 @@
         "type": "color"
       }
     },
-    "Orange": {
+    "orange": {
       "50": {
         "value": "#fffaeb",
         "type": "color"
@@ -244,7 +242,7 @@
         "type": "color"
       }
     },
-    "Green": {
+    "green": {
       "50": {
         "value": "#ecfdf3",
         "type": "color"
@@ -286,7 +284,7 @@
         "type": "color"
       }
     },
-    "Teal": {
+    "teal": {
       "50": {
         "value": "#E6FFFA",
         "type": "color"
@@ -328,7 +326,7 @@
         "type": "color"
       }
     },
-    "Blue": {
+    "blue": {
       "50": {
         "value": "#eff8ff",
         "type": "color"
@@ -369,51 +367,27 @@
         "value": "#194185",
         "type": "color"
       }
+    },
+    "brand": {
+      "yellow": {
+        "value": "#FFE600",
+        "type": "color"
+      },
+      "blue": {
+        "value": "#0C3FEA",
+        "type": "color"
+      },
+      "teal": {
+        "value": "#00AEBA",
+        "type": "color"
+      },
+      "coral": {
+        "value": "#FF8C8C",
+        "type": "color"
+      }
     }
   },
-  "Primary": {
-    "50": {
-      "value": "#E6FFFA",
-      "type": "color"
-    },
-    "100": {
-      "value": "#B2F5EA",
-      "type": "color"
-    },
-    "200": {
-      "value": "#81E6D9",
-      "type": "color"
-    },
-    "300": {
-      "value": "#4FD1C5",
-      "type": "color"
-    },
-    "400": {
-      "value": "#38B2AC",
-      "type": "color"
-    },
-    "500": {
-      "value": "#319795",
-      "type": "color"
-    },
-    "600": {
-      "value": "#2C7A7B",
-      "type": "color"
-    },
-    "700": {
-      "value": "#285E61",
-      "type": "color"
-    },
-    "800": {
-      "value": "#234E52",
-      "type": "color"
-    },
-    "900": {
-      "value": "#1D4044",
-      "type": "color"
-    }
-  },
-  "Shadow": {
+  "shadow": {
     "xs": {
       "value": {
         "color": "#1018280d",
@@ -554,13 +528,15 @@
       "type": "boxShadow"
     }
   },
-  "display": {
-    "value": "Public Sans",
-    "type": "fontFamilies"
-  },
-  "text": {
-    "value": "Public Sans",
-    "type": "fontFamilies"
+  "fontFamily": {
+    "display": {
+      "value": "Public Sans",
+      "type": "fontFamilies"
+    },
+    "text": {
+      "value": "Public Sans",
+      "type": "fontFamilies"
+    }
   },
   "xs": {
     "value": 12,
@@ -606,29 +582,33 @@
     "value": 72,
     "type": "fontSizes"
   },
-  "normal": {
-    "value": 400,
-    "type": "fontWeights"
+  "fontWeight": {
+    "normal": {
+      "value": 400,
+      "type": "fontWeights"
+    },
+    "medium": {
+      "value": 500,
+      "type": "fontWeights"
+    },
+    "semibold": {
+      "value": 600,
+      "type": "fontWeights"
+    },
+    "bold": {
+      "value": 700,
+      "type": "fontWeights"
+    }
   },
-  "medium": {
-    "value": 500,
-    "type": "fontWeights"
-  },
-  "semibold": {
-    "value": 600,
-    "type": "fontWeights"
-  },
-  "bold": {
-    "value": 700,
-    "type": "fontWeights"
-  },
-  "none": {
-    "value": "0%",
-    "type": "letterSpacing"
-  },
-  "tight": {
-    "value": "-2%",
-    "type": "letterSpacing"
+  "letterSpacing": {
+    "none": {
+      "value": "0%",
+      "type": "letterSpacing"
+    },
+    "tight": {
+      "value": "-2%",
+      "type": "letterSpacing"
+    }
   },
   "shorter": {
     "value": 18,
@@ -650,525 +630,527 @@
     "value": 30,
     "type": "lineHeights"
   },
-  "Display 2xl": {
-    "Regular": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 400,
-        "lineHeight": 90,
-        "fontSize": 72,
-        "letterSpacing": "-2%",
-        "paragraphSpacing": 72,
-        "paragraphIndent": "",
-        "textCase": "",
-        "textDecoration": ""
+  "typography": {
+    "display 2xl": {
+      "Regular": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 400,
+          "lineHeight": 90,
+          "fontSize": 72,
+          "letterSpacing": "-2%",
+          "paragraphSpacing": 72,
+          "paragraphIndent": "",
+          "textCase": "",
+          "textDecoration": ""
+        },
+        "type": "typography"
       },
-      "type": "typography"
+      "Medium": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 500,
+          "lineHeight": 90,
+          "fontSize": 72,
+          "letterSpacing": "-2%",
+          "paragraphSpacing": 72,
+          "paragraphIndent": "",
+          "textCase": "",
+          "textDecoration": ""
+        },
+        "type": "typography"
+      },
+      "Semibold": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 600,
+          "lineHeight": 90,
+          "fontSize": 72,
+          "letterSpacing": "-2%",
+          "paragraphSpacing": 72,
+          "paragraphIndent": "",
+          "textCase": "",
+          "textDecoration": ""
+        },
+        "type": "typography"
+      },
+      "Bold": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 700,
+          "lineHeight": 90,
+          "fontSize": 72,
+          "letterSpacing": "-2%",
+          "paragraphSpacing": 72,
+          "paragraphIndent": "",
+          "textCase": "",
+          "textDecoration": ""
+        },
+        "type": "typography"
+      }
     },
-    "Medium": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 500,
-        "lineHeight": 90,
-        "fontSize": 72,
-        "letterSpacing": "-2%",
-        "paragraphSpacing": 72,
-        "paragraphIndent": "",
-        "textCase": "",
-        "textDecoration": ""
+    "display xl": {
+      "Regular": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 400,
+          "lineHeight": 72,
+          "fontSize": 60,
+          "letterSpacing": "-2%",
+          "paragraphSpacing": 60
+        },
+        "type": "typography"
       },
-      "type": "typography"
+      "Medium": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 500,
+          "lineHeight": 72,
+          "fontSize": 60,
+          "letterSpacing": "-2%",
+          "paragraphSpacing": 60
+        },
+        "type": "typography"
+      },
+      "Semibold": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 600,
+          "lineHeight": 72,
+          "fontSize": 60,
+          "letterSpacing": "-2%",
+          "paragraphSpacing": 60
+        },
+        "type": "typography"
+      },
+      "Bold": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 700,
+          "lineHeight": 72,
+          "fontSize": 60,
+          "letterSpacing": "-2%",
+          "paragraphSpacing": 60
+        },
+        "type": "typography"
+      }
     },
-    "Semibold": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 600,
-        "lineHeight": 90,
-        "fontSize": 72,
-        "letterSpacing": "-2%",
-        "paragraphSpacing": 72,
-        "paragraphIndent": "",
-        "textCase": "",
-        "textDecoration": ""
+    "display lg": {
+      "Regular": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 400,
+          "lineHeight": 60,
+          "fontSize": 48,
+          "letterSpacing": "-2%",
+          "paragraphSpacing": 48
+        },
+        "type": "typography"
       },
-      "type": "typography"
+      "Medium": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 500,
+          "lineHeight": 60,
+          "fontSize": 48,
+          "letterSpacing": "-2%",
+          "paragraphSpacing": 48
+        },
+        "type": "typography"
+      },
+      "Semibold": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 600,
+          "lineHeight": 60,
+          "fontSize": 48,
+          "letterSpacing": "-2%",
+          "paragraphSpacing": 48
+        },
+        "type": "typography"
+      },
+      "Bold": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 700,
+          "lineHeight": 60,
+          "fontSize": 48,
+          "letterSpacing": "-2%",
+          "paragraphSpacing": 48
+        },
+        "type": "typography"
+      }
     },
-    "Bold": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 700,
-        "lineHeight": 90,
-        "fontSize": 72,
-        "letterSpacing": "-2%",
-        "paragraphSpacing": 72,
-        "paragraphIndent": "",
-        "textCase": "",
-        "textDecoration": ""
+    "display md": {
+      "Regular": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 400,
+          "lineHeight": 44,
+          "fontSize": 36,
+          "letterSpacing": "-2%",
+          "paragraphSpacing": 36
+        },
+        "type": "typography"
       },
-      "type": "typography"
+      "Medium": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 500,
+          "lineHeight": 44,
+          "fontSize": 36,
+          "letterSpacing": "-2%",
+          "paragraphSpacing": 36
+        },
+        "type": "typography"
+      },
+      "Semibold": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 600,
+          "lineHeight": 44,
+          "fontSize": 36,
+          "letterSpacing": "-2%",
+          "paragraphSpacing": 36
+        },
+        "type": "typography"
+      },
+      "Bold": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 700,
+          "lineHeight": 44,
+          "fontSize": 36,
+          "letterSpacing": "-2%",
+          "paragraphSpacing": 36
+        },
+        "type": "typography"
+      }
+    },
+    "display sm": {
+      "Regular": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 400,
+          "lineHeight": 38,
+          "fontSize": 30,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 30
+        },
+        "type": "typography"
+      },
+      "Medium": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 500,
+          "lineHeight": 38,
+          "fontSize": 30,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 30
+        },
+        "type": "typography"
+      },
+      "Semibold": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 600,
+          "lineHeight": 38,
+          "fontSize": 30,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 30
+        },
+        "type": "typography"
+      },
+      "Bold": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 700,
+          "lineHeight": 38,
+          "fontSize": 30,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 30
+        },
+        "type": "typography"
+      }
+    },
+    "display xs": {
+      "Regular": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 400,
+          "lineHeight": 32,
+          "fontSize": 24,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 24
+        },
+        "type": "typography"
+      },
+      "Medium": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 500,
+          "lineHeight": 32,
+          "fontSize": 24,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 24
+        },
+        "type": "typography"
+      },
+      "Semibold": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 600,
+          "lineHeight": 32,
+          "fontSize": 24,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 24
+        },
+        "type": "typography"
+      },
+      "Bold": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 700,
+          "lineHeight": 32,
+          "fontSize": 24,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 24
+        },
+        "type": "typography"
+      }
+    },
+    "text xl": {
+      "Regular": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 400,
+          "lineHeight": 30,
+          "fontSize": 20,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 20
+        },
+        "type": "typography"
+      },
+      "Medium": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 500,
+          "lineHeight": 30,
+          "fontSize": 20,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 20
+        },
+        "type": "typography"
+      },
+      "Semibold": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 600,
+          "lineHeight": 30,
+          "fontSize": 20,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 20
+        },
+        "type": "typography"
+      },
+      "Bold": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 700,
+          "lineHeight": 30,
+          "fontSize": 20,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 20
+        },
+        "type": "typography"
+      }
+    },
+    "text lg": {
+      "Regular": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 400,
+          "lineHeight": 28,
+          "fontSize": 18,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 18
+        },
+        "type": "typography"
+      },
+      "Medium": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 500,
+          "lineHeight": 28,
+          "fontSize": 18,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 18
+        },
+        "type": "typography"
+      },
+      "Semibold": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 600,
+          "lineHeight": 28,
+          "fontSize": 18,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 18
+        },
+        "type": "typography"
+      },
+      "Bold": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 700,
+          "lineHeight": 28,
+          "fontSize": 18,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 18
+        },
+        "type": "typography"
+      }
+    },
+    "text md": {
+      "Regular": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 400,
+          "lineHeight": 24,
+          "fontSize": 16,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 16
+        },
+        "type": "typography"
+      },
+      "Medium": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 500,
+          "lineHeight": 24,
+          "fontSize": 16,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 16
+        },
+        "type": "typography"
+      },
+      "Semibold": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 600,
+          "lineHeight": 24,
+          "fontSize": 16,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 16
+        },
+        "type": "typography"
+      },
+      "Bold": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 700,
+          "lineHeight": 24,
+          "fontSize": 16,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 16
+        },
+        "type": "typography"
+      }
+    },
+    "text sm": {
+      "Regular": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 400,
+          "lineHeight": 20,
+          "fontSize": 14,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 14
+        },
+        "type": "typography"
+      },
+      "Medium": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 500,
+          "lineHeight": 20,
+          "fontSize": 14,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 14
+        },
+        "type": "typography"
+      },
+      "Semibold": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 600,
+          "lineHeight": 20,
+          "fontSize": 14,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 14
+        },
+        "type": "typography"
+      },
+      "Bold": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 700,
+          "lineHeight": 20,
+          "fontSize": 14,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 14
+        },
+        "type": "typography"
+      }
+    },
+    "text xs": {
+      "Regular": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 400,
+          "lineHeight": 18,
+          "fontSize": 12,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 12
+        },
+        "type": "typography"
+      },
+      "Medium": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 500,
+          "lineHeight": 18,
+          "fontSize": 12,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 12
+        },
+        "type": "typography"
+      },
+      "Semibold": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 600,
+          "lineHeight": 18,
+          "fontSize": 12,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 12
+        },
+        "type": "typography"
+      },
+      "Bold": {
+        "value": {
+          "fontFamily": "Public Sans",
+          "fontWeight": 700,
+          "lineHeight": 18,
+          "fontSize": 12,
+          "letterSpacing": "0%",
+          "paragraphSpacing": 12
+        },
+        "type": "typography"
+      }
     }
   },
-  "Display xl": {
-    "Regular": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 400,
-        "lineHeight": 72,
-        "fontSize": 60,
-        "letterSpacing": "-2%",
-        "paragraphSpacing": 60
-      },
-      "type": "typography"
-    },
-    "Medium": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 500,
-        "lineHeight": 72,
-        "fontSize": 60,
-        "letterSpacing": "-2%",
-        "paragraphSpacing": 60
-      },
-      "type": "typography"
-    },
-    "Semibold": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 600,
-        "lineHeight": 72,
-        "fontSize": 60,
-        "letterSpacing": "-2%",
-        "paragraphSpacing": 60
-      },
-      "type": "typography"
-    },
-    "Bold": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 700,
-        "lineHeight": 72,
-        "fontSize": 60,
-        "letterSpacing": "-2%",
-        "paragraphSpacing": 60
-      },
-      "type": "typography"
-    }
-  },
-  "Display lg": {
-    "Regular": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 400,
-        "lineHeight": 60,
-        "fontSize": 48,
-        "letterSpacing": "-2%",
-        "paragraphSpacing": 48
-      },
-      "type": "typography"
-    },
-    "Medium": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 500,
-        "lineHeight": 60,
-        "fontSize": 48,
-        "letterSpacing": "-2%",
-        "paragraphSpacing": 48
-      },
-      "type": "typography"
-    },
-    "Semibold": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 600,
-        "lineHeight": 60,
-        "fontSize": 48,
-        "letterSpacing": "-2%",
-        "paragraphSpacing": 48
-      },
-      "type": "typography"
-    },
-    "Bold": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 700,
-        "lineHeight": 60,
-        "fontSize": 48,
-        "letterSpacing": "-2%",
-        "paragraphSpacing": 48
-      },
-      "type": "typography"
-    }
-  },
-  "Display md": {
-    "Regular": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 400,
-        "lineHeight": 44,
-        "fontSize": 36,
-        "letterSpacing": "-2%",
-        "paragraphSpacing": 36
-      },
-      "type": "typography"
-    },
-    "Medium": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 500,
-        "lineHeight": 44,
-        "fontSize": 36,
-        "letterSpacing": "-2%",
-        "paragraphSpacing": 36
-      },
-      "type": "typography"
-    },
-    "Semibold": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 600,
-        "lineHeight": 44,
-        "fontSize": 36,
-        "letterSpacing": "-2%",
-        "paragraphSpacing": 36
-      },
-      "type": "typography"
-    },
-    "Bold": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 700,
-        "lineHeight": 44,
-        "fontSize": 36,
-        "letterSpacing": "-2%",
-        "paragraphSpacing": 36
-      },
-      "type": "typography"
-    }
-  },
-  "Display sm": {
-    "Regular": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 400,
-        "lineHeight": 38,
-        "fontSize": 30,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 30
-      },
-      "type": "typography"
-    },
-    "Medium": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 500,
-        "lineHeight": 38,
-        "fontSize": 30,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 30
-      },
-      "type": "typography"
-    },
-    "Semibold": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 600,
-        "lineHeight": 38,
-        "fontSize": 30,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 30
-      },
-      "type": "typography"
-    },
-    "Bold": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 700,
-        "lineHeight": 38,
-        "fontSize": 30,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 30
-      },
-      "type": "typography"
-    }
-  },
-  "Display xs": {
-    "Regular": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 400,
-        "lineHeight": 32,
-        "fontSize": 24,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 24
-      },
-      "type": "typography"
-    },
-    "Medium": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 500,
-        "lineHeight": 32,
-        "fontSize": 24,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 24
-      },
-      "type": "typography"
-    },
-    "Semibold": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 600,
-        "lineHeight": 32,
-        "fontSize": 24,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 24
-      },
-      "type": "typography"
-    },
-    "Bold": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 700,
-        "lineHeight": 32,
-        "fontSize": 24,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 24
-      },
-      "type": "typography"
-    }
-  },
-  "Text xl": {
-    "Regular": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 400,
-        "lineHeight": 30,
-        "fontSize": 20,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 20
-      },
-      "type": "typography"
-    },
-    "Medium": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 500,
-        "lineHeight": 30,
-        "fontSize": 20,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 20
-      },
-      "type": "typography"
-    },
-    "Semibold": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 600,
-        "lineHeight": 30,
-        "fontSize": 20,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 20
-      },
-      "type": "typography"
-    },
-    "Bold": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 700,
-        "lineHeight": 30,
-        "fontSize": 20,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 20
-      },
-      "type": "typography"
-    }
-  },
-  "Text lg": {
-    "Regular": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 400,
-        "lineHeight": 28,
-        "fontSize": 18,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 18
-      },
-      "type": "typography"
-    },
-    "Medium": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 500,
-        "lineHeight": 28,
-        "fontSize": 18,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 18
-      },
-      "type": "typography"
-    },
-    "Semibold": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 600,
-        "lineHeight": 28,
-        "fontSize": 18,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 18
-      },
-      "type": "typography"
-    },
-    "Bold": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 700,
-        "lineHeight": 28,
-        "fontSize": 18,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 18
-      },
-      "type": "typography"
-    }
-  },
-  "Text md": {
-    "Regular": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 400,
-        "lineHeight": 24,
-        "fontSize": 16,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 16
-      },
-      "type": "typography"
-    },
-    "Medium": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 500,
-        "lineHeight": 24,
-        "fontSize": 16,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 16
-      },
-      "type": "typography"
-    },
-    "Semibold": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 600,
-        "lineHeight": 24,
-        "fontSize": 16,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 16
-      },
-      "type": "typography"
-    },
-    "Bold": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 700,
-        "lineHeight": 24,
-        "fontSize": 16,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 16
-      },
-      "type": "typography"
-    }
-  },
-  "Text sm": {
-    "Regular": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 400,
-        "lineHeight": 20,
-        "fontSize": 14,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 14
-      },
-      "type": "typography"
-    },
-    "Medium": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 500,
-        "lineHeight": 20,
-        "fontSize": 14,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 14
-      },
-      "type": "typography"
-    },
-    "Semibold": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 600,
-        "lineHeight": 20,
-        "fontSize": 14,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 14
-      },
-      "type": "typography"
-    },
-    "Bold": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 700,
-        "lineHeight": 20,
-        "fontSize": 14,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 14
-      },
-      "type": "typography"
-    }
-  },
-  "Text xs": {
-    "Regular": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 400,
-        "lineHeight": 18,
-        "fontSize": 12,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 12
-      },
-      "type": "typography"
-    },
-    "Medium": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 500,
-        "lineHeight": 18,
-        "fontSize": 12,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 12
-      },
-      "type": "typography"
-    },
-    "Semibold": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 600,
-        "lineHeight": 18,
-        "fontSize": 12,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 12
-      },
-      "type": "typography"
-    },
-    "Bold": {
-      "value": {
-        "fontFamily": "Public Sans",
-        "fontWeight": 700,
-        "lineHeight": 18,
-        "fontSize": 12,
-        "letterSpacing": "0%",
-        "paragraphSpacing": 12
-      },
-      "type": "typography"
-    }
-  },
-  "Border": {
+  "radii": {
     "none": {
       "value": 0,
       "type": "borderRadius"
@@ -1206,7 +1188,7 @@
       "type": "borderRadius"
     }
   },
-  "breakpoints": {
+  "breakpoint": {
     "sm": {
       "value": 480,
       "type": "sizing"
@@ -1228,23 +1210,17 @@
       "type": "sizing"
     }
   },
-  "Comp": {
-    "button": {
-      "value": 6,
-      "type": "borderRadius"
-    },
-    "tabs": {
-      "value": 6,
-      "type": "borderRadius"
-    }
-  },
   "tokenSetOrder": {
     "0": {
       "value": "base",
       "type": "other"
     },
     "1": {
-      "value": "semantic",
+      "value": "semantics",
+      "type": "other"
+    },
+    "2": {
+      "value": "component",
       "type": "other"
     }
   }
