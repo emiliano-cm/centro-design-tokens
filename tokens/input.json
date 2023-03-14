@@ -557,12 +557,12 @@
     },
     "outline": {
       "value": {
-        "color": "#15b79e99",
-        "type": "dropShadow",
         "x": 0,
         "y": 0,
         "blur": 0,
-        "spread": 3
+        "spread": 3,
+        "color": "#15b79e40",
+        "type": "dropShadow"
       },
       "type": "boxShadow"
     },
